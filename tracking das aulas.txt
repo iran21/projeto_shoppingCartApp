@@ -1,0 +1,9 @@
+aula 4
+	criação dos arquivos de modelos, eles vão se comunicar com a api (receber ou mandar os JSON)
+	para criar o código em formato dart do retorno da api, basta copiar o retorno e colar no Jason to dart
+	arquivos criados: product_list_model, category_model, product_details_model, user_model
+aula 5 e 6
+	criação dos repositórios (database), é um padrão de arquitetura chamado repository pattern
+	criação do arquivo settings.dart que armazena a apiUrl, o theme, e o user
+	criação do arquivo product_repository, ele basicmente faz as requisições http usando os models
+	criar um método chamado getAll() dentro de ProductRepository{} assíncrono, que retorna a resposta do request que é um future de list do tipo productListItemModel,   

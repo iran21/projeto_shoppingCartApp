@@ -1,0 +1,4 @@
+Esta pasta é responsável por capturar os objetos da API (JSON) e convertelos para dart
+*categoy e category list são os mesmos (?)
+R: ele errou, pode apagr um dos dois
+*Qual a URL da API(?)
