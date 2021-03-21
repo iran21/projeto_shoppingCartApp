@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:shopping_app/models/category_model.dart';
 import 'package:shopping_app/models/product_details_model.dart';
 import 'package:shopping_app/models/product_list_item_model.dart';
 

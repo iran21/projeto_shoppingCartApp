@@ -18,7 +18,9 @@ class CategoryIcon extends StatelessWidget {
       margin: EdgeInsets.all(5),
       padding: EdgeInsets.all(5),
       decoration: BoxDecoration(
-        color: item.tag == bloc.selectedCategory ? Colors.blue : Colors.yellow,
+        color: item.tag == bloc.selectedCategory
+            ? Theme.of(context).primaryColor.withOpacity(0.3)
+            : Theme.of(context).primaryColor,
         borderRadius: BorderRadius.all(
           Radius.circular(70),
         ),

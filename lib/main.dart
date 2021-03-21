@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shopping_app/bloc/cart_bloc.dart';
 import 'package:shopping_app/bloc/home_page_bloc.dart';
-import 'package:shopping_app/ui/android/pages/home_page.dart';
+import 'package:shopping_app/ui/android/pages/tabs_page.dart';
 
 void main() {
   runApp(Main());
@@ -14,7 +15,10 @@ class Main extends StatelessWidget {
       providers: [
         ChangeNotifierProvider<HomeBloc>.value(
           value: HomeBloc(),
-        )
+        ),
+        ChangeNotifierProvider<CartBloc>.value(
+          value: CartBloc(),
+        ),
       ],
       child: MyApp(),
     );
@@ -31,7 +35,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(title: 'shopping'),
+      home: DefaultTabController(
+        length: 3,
+        child: TabsPage(),
+      ),
     );
   }
 }

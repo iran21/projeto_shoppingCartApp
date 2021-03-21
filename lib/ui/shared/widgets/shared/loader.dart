@@ -1,7 +1,6 @@
-import 'dart:io' show Platform;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:shopping_app/ui/shared/components/progress_indicator.dart';
+import 'package:shopping_app/ui/shared/widgets/shared/progress_indicator.dart';
 
 class Loader extends StatelessWidget {
   final List object;

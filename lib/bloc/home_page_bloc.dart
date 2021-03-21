@@ -20,22 +20,22 @@ class HomeBloc extends ChangeNotifier {
   getCategories() {
     categoryDatabase.getAll().then((data) {
       this.categories = data;
+      notifyListeners();
     });
-    notifyListeners();
   }
 
   getProducts() {
     productDatabase.getAll().then((data) {
       this.products = data;
+      notifyListeners();
     });
-    notifyListeners();
   }
 
   getProductsByCategory() {
     productDatabase.getByCategory(selectedCategory).then((data) {
       this.products = data;
+      notifyListeners();
     });
-    notifyListeners();
   }
 
   changeCategory(String tag) {
